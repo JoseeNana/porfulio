@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
     <title>Service</title>
 </head>
 <body>
@@ -15,7 +17,9 @@
         <nav>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
-                <i class="bi bi-list"></i>
+                <a onclick="menu()"> 
+                    <i class="bi bi-list"></i>
+                </a>
             </label>
             <a class="navbar-brand" href="home.html">Nana Josée</a>
             <ul>
@@ -27,18 +31,86 @@
             </ul>
         </nav>
     </header>
-    
-    <div class="service">
-        <p>MY SERVICE :</p>
+
+    <div class="mobile_nav">
         <ul>
-            <li>Graphic designer</li>
-            <li>Web developper(junior)</li>
-            <li>C programming</li>
+            <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="realisation.html">Realisation</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
         </ul>
+    </div>
+    
+    <div class="wrapper">
+        <h2>My Service :</h2><br>
+        <div class="paragraph">
+            <p>Are you seeking a skilled Graphic Designer to bring your vision to life? 
+                A budding Web Developer to create your online presence?
+                A proficient C Programmer to build robust applications? 
+                Or perhaps a meticulous Statistical Technician to analyze your data?
+            </p>
+            <p>
+                In this case I am the person you need
+            </p>
+        </div><br><br><br>
+
+        <div class="service">
+            <div class="division" id="graphic">
+                <div class="icons">
+                    <i class="bi bi-columns"></i>
+                </div>
+                <p>
+                    Skilled graphic designer offering innovative and visually compelling design solutions. 
+                    With a keen eye for detail and a passion for creativity,   
+                    I create impactful designs that effectively communicate brand messages.
+                </p>
+            </div>
+
+            <div class="division" id="c">
+                <div class="icons">
+                    <i class="bi bi-braces"></i>
+                </div>
+                <p>
+                    Growing C programmer with a solid foundation in programming fundamentals.
+                    Proficient in developing efficient and reliable C code. Experienced in  data structures, algorithms. 
+                    Eager to apply knowledge to new challenges and contribute to software development projects.
+                </p>
+            </div>
+
+            <div class="division" id="web">
+                <div class="icons">
+                    <i class="bi bi-journal-code"></i>
+                </div>
+                <p>
+                    Aspiring web developer with a strong foundation in HTML, CSS, and JavaScript. 
+                    Possessing a keen eye for design and user experience,
+                    I am eager to create functional and visually appealing websites. 
+                    Skilled in responsive design, front-end frameworks. 
+                    Committed to learning new technologies and delivering high-quality web solutions.
+
+                </p>
+            </div>
+
+            <div class="division" id="stati">
+                <div class="icons">
+                    <i class="bi bi-bar-chart"></i>
+                </div>
+                <p>
+                    Detail-oriented statistical technician with a strong 
+                    foundation in data analysis and statistical methods. 
+                    Proficient in Excel. 
+                    Experienced in descriptive statistics. 
+                    Capable of cleaning, organizing, and analyzing data to extract meaningful insights. 
+                    Eager to contribute to data-driven decision making processes.
+                </p>
+            </div>
+        </div>
+
     </div>
 
     <footer>
-        <p>Copyright 2024 by <span>Nana Josée</span></p>
+        <p>  © Copyright 2024 by <span>Nana Josée</span></p>
         <p>All Rights Reserved</p>
     </footer>
 </body>
